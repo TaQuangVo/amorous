@@ -123,6 +123,7 @@
 
 .body {
   position: relative;
+  padding: 0 90px;
   padding-bottom: 200px;
   min-height: 100%;
 }
