@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  width: 100vw;
+  height: var(--vh);
+  overflow: hidden;
+}
+.leftSide {
+  width: calc(var(--vh) * 0.75);
+  max-width: 40vw;
+  height: var(--vh);
+  position: relative;
+}
+.logo {
+  width: 300px;
+  height: 80px;
+  margin: 0px 50px;
+  position: relative;
+  z-index: 99;
+}
+.background {
+  width: calc(var(--vh) * 0.75);
+  height: calc(var(--vh) * 0.75);
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-bottom-right-radius: 200px;
+  overflow: hidden;
+  box-shadow: 4px 4px 12px #b45a5a57;
+}
+.steps {
+  height: calc(var(--vh) * 0.25);
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.rightSide {
+  flex-grow: 1;
+  height: 100%;
+}

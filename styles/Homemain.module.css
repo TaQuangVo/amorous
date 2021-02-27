@@ -1,0 +1,237 @@
+.container {
+  max-width: 2150px;
+  min-height: 700px;
+  width: 95vw;
+  margin: 0 auto 0 auto;
+  position: relative;
+  z-index: 98;
+}
+.hero {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 770px;
+  background-color: #e4c1b9;
+}
+.wraperWraper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.heroImageWraper {
+  width: 100%;
+  min-width: 1200px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.heroContent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.heroHeader {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  transform: translateY(-50%);
+}
+.heroHeader h1 {
+  color: white;
+  font-family: "Dancing Script", cursive;
+  font-weight: 400;
+  font-size: 5rem;
+  text-align: center;
+
+  max-width: 90%;
+  margin: auto;
+  margin-bottom: 30px;
+}
+.heroHeader h2 {
+  color: white;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 2rem;
+  text-align: center;
+}
+
+/*options*/
+.options {
+  --dropdown-width: 370px;
+  --dropdown-height: 80px;
+}
+.options {
+  position: absolute;
+  width: 1500px;
+  max-width: 80vw;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  display: flex;
+  justify-content: space-between;
+}
+.option {
+  width: var(--dropdown-width);
+  height: var(--dropdown-height);
+  border-radius: 20px;
+  overflow: hidden;
+  border: solid 1px white;
+  transition: all 300ms ease-in-out;
+}
+.option:nth-child(2) {
+  margin: 0 70px;
+}
+.optionBody {
+  height: 450px;
+  padding: 0 30px 30px 30px;
+  display: flex;
+  flex-direction: column;
+}
+.optionTittle {
+  width: 100%;
+  height: var(--dropdown-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.optionTittle h3 {
+  font-family: var(--font-family);
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 400;
+  transition: all 300px ease-in-out;
+}
+.optionContent {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.optionContent p {
+  font-family: var(--font-family);
+  color: #e1b6ac;
+  font-size: 1.1rem;
+}
+.optionContent div {
+  display: flex;
+  justify-content: center;
+}
+.optionContent button {
+  padding: 15px 30px;
+  color: white;
+  background-color: #e1b6ac;
+  font-family: var(--font-family);
+  font-size: 1.1rem;
+  outline: none;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+.optionContent button:hover {
+  background-color: #d3a499;
+}
+
+.option:hover {
+  background-color: white;
+  height: 450px;
+  box-shadow: 2px 2px 8px #b67f734b;
+}
+.option:hover .optionTittle h3 {
+  color: #e1b6ac;
+}
+
+/*media query*/
+@media (max-width: 1280px) {
+  .optionContent button {
+    padding: 12px 22px;
+  }
+  .options {
+    --dropdown-height: 65px;
+  }
+}
+@media (max-width: 1000px) {
+  .heroHeader {
+    top: 30%;
+  }
+  .heroImageWraper {
+    min-width: 120vw;
+    max-width: none;
+  }
+  .options {
+    --dropdown-width: 260px;
+    --dropdown-height: 60px;
+  }
+  .options {
+    height: 240px;
+    position: absolute;
+    max-width: 80vw;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
+  .option {
+    position: absolute;
+    border-radius: 13px;
+  }
+  .option:nth-child(1) {
+    margin: 0;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+  }
+  .option:nth-child(2) {
+    margin: 0;
+    left: 50%;
+    top: calc(240px / 2 - 30px);
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+  .option:nth-child(3) {
+    margin: 0;
+    top: calc(240px - 60px);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+  .optionBody {
+    height: 350px;
+    padding: 0 30px 10px 30px;
+  }
+  .option:hover {
+    height: 350px;
+  }
+}
+
+@media (max-width: 500px) {
+  .options {
+    --dropdown-width: 200px;
+    --dropdown-height: 50px;
+  }
+  .option {
+    position: absolute;
+    border-radius: 8px;
+  }
+  .optionBody {
+    height: 300px;
+    padding: 0 20px 0px 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .option:hover {
+    height: 300px;
+  }
+  .optionContent button {
+    padding: 8px 16px;
+  }
+}

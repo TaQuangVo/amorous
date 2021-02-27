@@ -1,0 +1,62 @@
+.container {
+  width: 100vw;
+  height: var(--nav-hight);
+  position: relative;
+  background-color: #fff8f870;
+}
+.logo {
+  width: 240px;
+  height: 75%;
+  position: relative;
+}
+.body {
+  width: 90vw;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hambugerIcon {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.hambugerIcon svg {
+  height: 25%;
+  fill: #e1b6ac;
+}
+.dropdownWraper {
+  max-height: 0;
+  position: absolute;
+  right: 0;
+  top: 80%;
+  width: 300px;
+  max-width: 80vw;
+  overflow: hidden;
+  background-color: var(--color-background);
+  border-radius: 10px;
+  transition: all 300ms ease-in-out;
+}
+.dropdown {
+  width: 80%;
+  margin: 35px auto;
+}
+.dropdown p {
+  font-family: var(--font-family);
+  font-size: 1.5rem;
+  margin-top: 25px;
+  text-align: center;
+  color: var(--color-main);
+  cursor: pointer;
+}
+.dropdown p:hover {
+  text-decoration: underline;
+}
+.hambugerIcon:hover .dropdownWraper {
+  max-height: 400px;
+}
+.dropdownWraper:hover {
+  max-height: 400px;
+}
