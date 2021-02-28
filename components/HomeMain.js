@@ -1,4 +1,4 @@
-import homeMainStyle from "../styles/HomeMain.module.css";
+import homeMainStyle from "../styles/Homemain.module.css";
 import Image from "next/image"
 import Link from "next/link"
 

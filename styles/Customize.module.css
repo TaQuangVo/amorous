@@ -16,6 +16,7 @@
   margin: 0px 50px;
   position: relative;
   z-index: 99;
+  cursor: pointer;
 }
 .background {
   width: calc(var(--vh) * 0.75);
