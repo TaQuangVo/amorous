@@ -1,5 +1,6 @@
 import homeMainStyle from "../styles/HomeMain.module.css";
 import Image from "next/image"
+import Link from "next/link"
 
 
 
@@ -35,9 +36,11 @@ export default function HomeMain() {
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley 
                                 </p>
                                 <div>
-                                    <button >
-                                        Let design
-                                    </button>
+                                    <Link href="/customize">
+                                        <button >
+                                            Let design
+                                        </button>
+                                    </Link>
                                 </div>
                             
                             </div>
