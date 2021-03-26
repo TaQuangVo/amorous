@@ -55,6 +55,19 @@
   font-weight: 500;
   margin-right: 20px;
 }
+.tagWraper {
+  display: flex;
+  flex-grow: 1;
+  overflow: scroll;
+  /* this will hide the scrollbar in mozilla based browsers */
+  overflow: -moz-scrollbars-none;
+  /* this will hide the scrollbar in internet explorers */
+  -ms-overflow-style: none;
+}
+.tagWraper::-webkit-scrollbar {
+  width: 0 !important;
+  display: none;
+}
 
 /*search and button*/
 .searchNBtn {
@@ -167,4 +180,158 @@
   font-family: var(--font-family);
   font-size: 1rem;
   color: white;
+}
+@media (max-width: 750px) {
+  .container {
+    padding-top: 30px;
+  }
+  .header {
+    width: 100%;
+    padding: 0 40px;
+  }
+  .body {
+    padding: 0 30px;
+    padding-bottom: 200px;
+  }
+
+  /*fotter*/
+  .footer {
+    height: 90px;
+    border-top-left-radius: 999px;
+  }
+  .footer .logo {
+    height: 50px;
+    width: 130px;
+    position: relative;
+  }
+  .footer p {
+    font-family: var(--font-family);
+    font-size: 1rem;
+    color: white;
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    padding-top: 15px;
+  }
+  .header {
+    width: 100%;
+    padding: 0 40px;
+  }
+  .body {
+    padding: 0 30px;
+    padding-bottom: 200px;
+  }
+
+  /*header*/
+  .backBtn {
+    height: 12px;
+  }
+  .header h1 {
+    margin-top: 10px;
+  }
+  .titleSub {
+    margin-top: 10px;
+  }
+  .chosen {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+  }
+  .searchNBtn {
+    height: 35px;
+    margin-top: 20px;
+  }
+
+  /*fotter*/
+  .footer {
+    height: 80px;
+    border-top-left-radius: 999px;
+    padding: 0 30px;
+    max-width: 90%;
+  }
+  .footer .logo {
+    height: 40px;
+    width: 110px;
+  }
+  .footer p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 550px) {
+  .header {
+    width: 100%;
+    padding: 0 15px;
+  }
+  .body {
+    padding: 0 30px;
+    padding-bottom: 200px;
+  }
+}
+@media (max-width: 550px) {
+  .body {
+    padding: 0 8px;
+    padding-bottom: 200px;
+  }
+  .chosen p {
+    margin-right: 10px;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    padding-top: 10px;
+  }
+  .header h1 {
+    font-size: 4rem;
+    font-weight: 500;
+    margin-top: 0px;
+  }
+  .searchNBtn {
+    height: 25px;
+    margin-top: 15px;
+  }
+  .search input {
+    width: 200px;
+    max-width: 50vw;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-family: var(--font-family);
+    font-size: 1rem;
+  }
+  .searchIcon {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .searchIcon svg {
+    height: 100%;
+    fill: rgb(128, 128, 128);
+  }
+
+  .body {
+    padding-bottom: 150px;
+  }
+
+  .continue {
+    height: 100%;
+  }
+  .continue button {
+    padding: 0 20px;
+  }
+  .ingredientsWraper {
+    margin-top: 10px;
+  }
+
+  /*fotter*/
+  .footer {
+    max-width: 95%;
+  }
+  .footer .logo {
+    height: 35px;
+  }
+  .footer p {
+    font-size: 0.8rem;
+  }
 }

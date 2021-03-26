@@ -47,12 +47,6 @@ a {
   }
 }
 
-@media (max-width: 500px) {
-  html {
-    font-size: 9px;
-  }
-}
-
 /*locomotive*/
 /*! locomotive-scroll v4.1.0 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */
 html.has-scroll-smooth {

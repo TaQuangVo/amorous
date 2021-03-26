@@ -68,3 +68,35 @@
 .done {
   opacity: 1;
 }
+@media (max-width: 700px) {
+  .step {
+    width: 100px;
+  }
+  .body svg {
+    width: 7px;
+    margin: 0 15px;
+    opacity: 0.2;
+  }
+  .leftArrow,
+  .rightArrow {
+    width: 40px;
+  }
+  .leftArrow div,
+  .rightArrow div {
+    width: 22px;
+    height: 22px;
+  }
+  .container {
+    width: calc(100% - 80px);
+  }
+}
+@media (max-width: 500px) {
+  .step {
+    width: 90px;
+  }
+  .leftArrow div,
+  .rightArrow div {
+    width: 20px;
+    height: 20px;
+  }
+}

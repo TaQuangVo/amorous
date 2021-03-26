@@ -41,9 +41,11 @@ export default function ChoseIngredients() {
                 <p className={styleIngrediens.discription}>Chose a maximal of 5 ingrediens that you want to include in your pragrance</p>
                 <div className={styleIngrediens.chosen}>
                     <p>Chosen:</p>
-                    <Tag imgUrl={data[5].url} tagName="Rambutan" onClick={(e) => {console.log(e.target)}}/>
-                    <Tag imgUrl={data[9].url} tagName="Rambutan" onClick={(e) => {console.log(e.target)}}/>
-                    <Tag imgUrl={data[13].url} tagName="Rambutan" onClick={(e) => {console.log(e.target)}}/>
+                    <div className={styleIngrediens.tagWraper}>
+                        <Tag imgUrl={data[5].url} tagName="Rambutan" onClick={(e) => {console.log(e.target)}}/>
+                        <Tag imgUrl={data[9].url} tagName="Rambutan" onClick={(e) => {console.log(e.target)}}/>
+                        <Tag imgUrl={data[13].url} tagName="Rambutan" onClick={(e) => {console.log(e.target)}}/>
+                    </div>
                 </div>
                 <div className={styleIngrediens.searchNBtn}>
                     <div className={styleIngrediens.search}>

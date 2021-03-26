@@ -19,14 +19,14 @@ export default function customize() {
                 <div className={customizeStyle.header}>
                     <div className={customizeStyle.logo}>
                         <Link href="/">
-                            <Image src="/img/logo.png" layout="fill" objectFit="contain" objectPosition="left center"/>
+                            <a><Image src="/img/logo.png" layout="fill" objectFit="contain" objectPosition="left center"/></a>
                         </Link>
                     </div>
                     <div className={customizeStyle.background}>
                         <Image src="/img/customizeBackground.jpg" width={1250} height={1250} alt="customize your fragrance" />
                     </div>
                     <div className={customizeStyle.steps} >
-                        <Steps step={3}/>
+                        <Steps step={1}/>
                     </div>
                 </div>
             </div>

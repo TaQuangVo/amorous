@@ -8,7 +8,7 @@ export default function HomeNav() {
           <div className={homeNavStyle.body}>
             <div className={homeNavStyle.logo}>
             <Link href="/"> 
-              <Image src="/img/logo.png" layout="fill" objectFit="contain" objectPosition="left center"/>
+              <a><Image src="/img/logo.png" layout="fill" objectFit="contain" objectPosition="left center"/></a>
             </Link>
             </div>
             <div className={homeNavStyle.links}>

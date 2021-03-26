@@ -70,3 +70,13 @@
     --width: 100px;
   }
 }
+@media (max-width: 500px) {
+  .container {
+    --width: 80px;
+  }
+}
+@media (max-width: 400px) {
+  .container {
+    --width: 75px;
+  }
+}
