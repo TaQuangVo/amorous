@@ -6,7 +6,7 @@ export default function IngredientsTemplate({imgUrl, name, chosen, display}) {
         <div className={styleIngredients.container} style={display ? {display:"block"} : {display:"none"}}>
             <div className={styleIngredients.avata}>
                 <div className={styleIngredients.avataOutline}></div>
-                <div className={styleIngredients.avataImage}>
+                <div className={styleIngredients.avataImage} style={{borderRadius: "50%"}}>
                     <Image src={imgUrl} layout="fill" objectFit="contain" objectPosition="center center" alt={name}/>
                 </div>
                 <div className={styleIngredients.chosen} style={chosen? null : {display:"none"}}>
